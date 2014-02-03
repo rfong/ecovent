@@ -1,0 +1,26 @@
+/* generalized functionality */
+/* variables */
+/* mixins */
+/* styles */
+/* line 30, ../sass/global.sass */
+.hidden {
+  display: none;
+}
+
+/* line 33, ../sass/global.sass */
+.clear {
+  clear: both;
+}
+
+/* line 36, ../sass/global.sass */
+.full {
+  width: 100%;
+  text-align: center;
+  padding: 20px 40px;
+}
+
+/* bootstrap override */
+/* line 41, ../sass/global.sass */
+.carousel .carousel-control {
+  width: 40px;
+}

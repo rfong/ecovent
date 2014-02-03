@@ -1,0 +1,42 @@
+@import mixins
+
+/* variables */
+
+$green: #57bf43
+$green-lite: #bbff9b
+
+$red: #e62e00
+$red-lite: #ff714d
+
+/* mixins */
+
+=full
+  width: 100%
+  text-align: center
+  padding: 20px 40px
+
+=inset($sz, $color)
+  -moz-box-shadow: inset 0 $sz $sz (-$sz) $color, inset 0 (-$sz) $sz (-$sz) $color
+  -webkit-box-shadow: inset 0 $sz $sz (-$sz) $color, inset 0 (-$sz) $sz (-$sz) $color
+  box-shadow: inset 0 $sz $sz (-$sz) $color, inset 0 (-$sz) $sz (-$sz) $color
+
+=inset-top($sz, $color)
+  -moz-box-shadow: inset 0 $sz $sz (-$sz) $color
+  -webkit-box-shadow: inset 0 $sz $sz (-$sz) $color
+  box-shadow: inset 0 $sz $sz (-$sz) $color
+
+/* styles */
+
+.hidden
+  display: none 
+
+.clear
+  clear: both
+
+.full
+  +full
+
+/* bootstrap override */
+
+.carousel .carousel-control
+  width: 40px

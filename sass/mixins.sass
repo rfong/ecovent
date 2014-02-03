@@ -1,0 +1,88 @@
+// assumes element to be centered has class .centered 
+=vertical-center
+  text-align: center
+  &:before
+    content: ''
+    display: inline-block
+    height: 100%
+    vertical-align: middle
+    margin-right: -0.25em
+  .centered
+    display: inline-block
+    vertical-align: middle
+    //margin-top: -100px
+
+
+/* generalized functionality */
+
+=box-shadow($color, $blur, $spread:0, $x:0, $y:0)
+  -moz-box-shadow:    $color $x $y $blur $spread
+  -webkit-box-shadow: $color $x $y $blur $spread
+  -o-box-shadow:      $color $x $y $blur $spread
+  box-shadow:         $color $x $y $blur $spread
+
+=inset-box-shadow($color, $blur, $spread:0, $x:0, $y:0)
+  -moz-box-shadow:    inset $color $x $y $blur $spread
+  -webkit-box-shadow: inset $color $x $y $blur $spread
+  -o-box-shadow:      inset $color $x $y $blur $spread
+  box-shadow:         inset $color $x $y $blur $spread
+
+=letterpress
+  text-shadow: 1px 1px rgba(255,255,255,0.4)
+=boxpress
+  +inset-box-shadow(rgba(0,0,0,0.3), 1px, 0, 1px, 1px)
+
+=border-radius($r)
+  -webkit-border-radius: $r
+  -moz-border-radius: $r
+  border-radius: $r
+
+=text-bg($url)
+  background: url($url)
+  background-clip: text
+  -webkit-background-clip: text
+  -moz-background-clip: text
+  text-fill-color: transparent
+  -webkit-text-fill-color: transparent
+  -moz-text-fill-color: transparent
+
+=un-text-bg($color)
+  background: none
+  background-clip: none
+  -webkit-background-clip: none
+  -moz-background-clip: none
+  text-fill-color: $color
+  -webkit-text-fill-color: $color
+  -moz-text-fill-color: $color
+  color: $color
+
+=border-box
+  box-sizing: border-box
+  -ms-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+
+=transition($prop)
+  transition: #{$prop}
+  -moz-transition: #{$prop}
+  -webkit-transition: #{$prop}
+  -o-transition: #{$prop}
+
+// flips colors on hover
+=invertible-color($text-color, $bg-color)
+  color: $text-color
+  background-color: $bg-color
+  &:hover
+    color: $bg-color
+    background-color: $text-color
+
+=unselectable
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  -o-user-select: none
+  user-select: none
+
+=no-underline
+  &:hover, &:active
+    text-decoration: none
