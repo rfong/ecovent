@@ -1,11 +1,12 @@
+var image_base_path = "https://github.com/rfong/ecovent/blob/gh-pages/images/";
 var slides = [
-  { image: "images/dip.jpg",
+  { image: "dip.jpg",
     caption: "Make every room in your home the right temperature."
   },
-  { image: "images/ecovent.jpg",
+  { image: "ecovent.jpg",
     caption: "Vents install in minutes, improving comfort immediately."
   },
-  { image: "images/lightbulb.jpg",
+  { image: "lightbulb.jpg",
     caption: "Put a stop to wasting money heating and cooling empty space."
   }
 ];
@@ -24,7 +25,7 @@ $(document).ready(function(){
   $.each(slides, function(i,slide) {
     $('.carousel-inner').append(
       Mustache.render(carousel_item_template, { 
-        image: slide.image,
+        image: image_base_path + slide.image,
         caption: slide.caption
         })
     );
