@@ -1,4 +1,4 @@
-var image_base_path = "https://github.com/rfong/ecovent/blob/gh-pages/images/";
+var image_base_path = "https://raw2.github.com/rfong/ecovent/main/images/";
 var slides = [
   { image: "dip.jpg",
     caption: "Make every room in your home the right temperature."
