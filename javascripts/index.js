@@ -1,9 +1,9 @@
 var image_base_path = "https://raw2.github.com/rfong/ecovent/main/images/";
 var slides = [
-  { image: "dip.jpg",
+  { image: "dip.JPG",
     caption: "Make every room in your home the right temperature."
   },
-  { image: "ecovent.jpg",
+  { image: "ecovent.JPG",
     caption: "Vents install in minutes, improving comfort immediately."
   },
   { image: "lightbulb.jpg",
