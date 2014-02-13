@@ -1,75 +1,71 @@
 @import global
 
-body
-  font-size: 16px
-  font-family: Georgia, Trebuchet, serif
-  +border-box
-  padding-bottom: 30px
-
-::-moz-selection
-  background-color: $green-lite
-::selection 
-  background-color: $green-lite
-
-
-p 
-  width: 500px
-  margin: 0 auto
-
-
-#nav
-  padding: 20px 40px
-  //font-family: Georgia, Trebuchet, serif
-  font-size: 30px
-
-  .link
-    float: right
-    font-size: 16px
-    font-family: Helvetica, Arial, sans-serif
-    margin-top: 0.6em
-    text-transform: uppercase
 
 .carousel
   height: 600px
-  +inset(10px, #666)
+  +inset
   margin-bottom: 20px
 
   .carousel-inner, .item
     height: 100%
     position: relative
 
-  .item > .image
-    height: 100%
-    width: 100%
-    background-size: cover
-    background-repeat: no-repeat
-    background-position: center center
-    +inset(10px, #666)
-
-  .item > .caption-wrapper
-    position: absolute
-    display: table
-    height: 100%
-    top: 0
-    left: 10%
-    width: 400px
-    text-align: center
-    font-size: 40px
-
-    .caption
-      display: table-cell
-      vertical-align: middle
-      text-align: center
-
-      color: #000
-      +letterpress
-
   .carousel-indicators
     bottom: 80px
     li
-      background-color: #fff
+      //background-color: #fff
       &.active
-        background-color: $red
+        //background-color: $red
+
+
+.image
+  position: relative
+  height: 100%
+  width: 100%
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center center
+  //+inset
+
+.caption-wrapper
+  position: absolute
+  display: table
+  height: 100%
+  top: 0
+  left: 10%
+  width: 400px
+  text-align: center
+  font-size: 40px
+
+  &.caption-right
+    left: auto
+    right: 10%
+
+  .caption
+    display: table-cell
+    vertical-align: middle
+    text-align: center
+
+    color: #000
+    +letterpress
+
+
+.full.image
+  height: 600px
+
+
+.row
+  padding: 20px 0
+  &:first-child
+    padding-top: 40px
+  &:last-child
+    padding-bottom: 40px
+
+
+#value-propositions > div, #specs > div
+  text-align: center
+  img 
+    max-width: 100%
 
 
 #signup
@@ -90,3 +86,4 @@ p
   .form-control, button
     //border: 1px solid #999
     +box-shadow(rgba(0,0,0,0.4), 1px, 0, 1px, 1px)
+

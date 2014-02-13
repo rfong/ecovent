@@ -1,6 +1,6 @@
 // assumes element to be centered has class .centered 
 =vertical-center
-  text-align: center
+  //text-align: center
   &:before
     content: ''
     display: inline-block
@@ -14,6 +14,24 @@
 
 
 /* generalized functionality */
+
+=button
+  cursor: pointer
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif
+  text-decoration: none
+  letter-spacing: 2px
+  text-shadow: none
+
+  height: 2.5em
+  display: inline-block
+  vertical-align: middle
+  padding: 0.5em 20px
+  margin: 0.5em 0
+
+  +transition(background-color 0.2s)
+  +border-radius(5px)
+
+  border-style: none
 
 =box-shadow($color, $blur, $spread:0, $x:0, $y:0)
   -moz-box-shadow:    $color $x $y $blur $spread
@@ -32,9 +50,14 @@
 =boxpress
   +inset-box-shadow(rgba(0,0,0,0.3), 1px, 0, 1px, 1px)
 
+=text-glow($color:#fff, $blur:3px)
+  text-shadow: 0 0 $blur $color
+
 =border-radius($r)
   -webkit-border-radius: $r
   -moz-border-radius: $r
+  -ms-border-radius: $r
+  -o-border-radius: $r
   border-radius: $r
 
 =text-bg($url)
@@ -62,11 +85,12 @@
   -webkit-box-sizing: border-box
   -moz-box-sizing: border-box
 
-=transition($prop)
-  transition: #{$prop}
+=transition($prop:0.2s)
   -moz-transition: #{$prop}
+  -ms-transition: #{$prop}
   -webkit-transition: #{$prop}
   -o-transition: #{$prop}
+  transition: #{$prop}
 
 // flips colors on hover
 =invertible-color($text-color, $bg-color)

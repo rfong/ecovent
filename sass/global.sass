@@ -7,25 +7,54 @@ $green-lite: #bbff9b
 
 $red: #e62e00
 $red-lite: #ff714d
+$red-dark: #c52700
+
+$font-color: #333
 
 /* mixins */
 
 =full
   width: 100%
-  text-align: center
-  padding: 20px 40px
+  padding: 20px 150px
 
-=inset($sz, $color)
+=inset($sz:10px, $color:#666)
   -moz-box-shadow: inset 0 $sz $sz (-$sz) $color, inset 0 (-$sz) $sz (-$sz) $color
   -webkit-box-shadow: inset 0 $sz $sz (-$sz) $color, inset 0 (-$sz) $sz (-$sz) $color
   box-shadow: inset 0 $sz $sz (-$sz) $color, inset 0 (-$sz) $sz (-$sz) $color
 
-=inset-top($sz, $color)
+=inset-top($sz:10px, $color:#666)
   -moz-box-shadow: inset 0 $sz $sz (-$sz) $color
   -webkit-box-shadow: inset 0 $sz $sz (-$sz) $color
   box-shadow: inset 0 $sz $sz (-$sz) $color
 
+.inset
+  +inset
+
+=dark-palette
+  background-color: #383332
+  color: #fff
+  +text-glow(rgba(0,0,0,0.8))
+  +transition
+  a, a:link, a:active, a:visited
+    color: #fff
+  a:hover
+    color: #8cfd60
+
 /* styles */
+
+body
+  font-size: 20px
+  //font-family: 'Noto Sans', Helvetica, Arial, sans-serif
+  font-family: Georgia, Trebuchet, serif
+  +border-box
+  color: $font-color
+
+h3
+  margin-bottom: 15px
+
+a, a:link, a:hover, a:active, a:visited
+  text-decoration: none
+  color: $font-color
 
 .hidden
   display: none 
@@ -36,7 +65,31 @@ $red-lite: #ff714d
 .full
   +full
 
+a.button
+  +button
+  font-size: 20px
+  letter-spacing: 2px
+
+  color: #fff
+  background-color: #FF3A6B
+  text-shadow: none
+
+  &:hover
+    background-color: #D31818
+
 /* bootstrap override */
 
 .carousel .carousel-control
   width: 40px
+
+.carousel.carousel-fade
+  .item
+    +transition(opacity 0.5s)
+    opacity: 0
+    &.active
+      opacity: 1
+
+button
+  //border-radius: 0 !important
+  +text-glow(rgba(0,0,0,0.4))
+

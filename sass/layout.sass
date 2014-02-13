@@ -1,0 +1,66 @@
+@import global
+
+
+::-moz-selection
+  background-color: $green-lite
+::selection 
+  background-color: $green-lite
+
+
+#content
+  +border-box
+  padding: 30px 0
+
+.text-center
+  text-align: center
+
+p.center
+  width: 640px
+  margin: 0 auto
+  text-align: left
+  margin-bottom: 1em
+  &:last-child
+    margin-bottom: 0
+
+
+#nav
+  padding: 25px 0
+  +vertical-center
+  font-size: 30px
+  position: relative
+
+  .logo
+    height: 45px
+
+  a
+    //display: block
+    //+border-box
+    height: 100%
+    line-height: 100%
+    float: right
+    font-family: Helvetica, Arial, sans-serif
+    text-transform: uppercase
+    font-size: 16px
+    margin-top: 1em
+
+.button
+  &:hover
+    background-color: $green-lite
+  +button
+
+
+#footer
+  +full
+  //+inset-top(10px, #111)
+  +dark-palette
+
+  h2
+    margin-top: 0
+    margin-bottom: 20px
+
+  .row > div
+    padding: 10px 0
+
+  .fa 
+    margin-right: 0.5em
+

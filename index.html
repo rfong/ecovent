@@ -10,10 +10,18 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+    <!-- libs -->
     <link rel="stylesheet" href="stylesheets/normalize.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/FlexSlider-version-2.2/flexslider.css">
+
+    <!-- google web fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+    <!-- custom -->
+    <link rel="stylesheet" href="stylesheets/layout.css">
     <link rel="stylesheet" href="stylesheets/index.css">
 
   </head>
@@ -25,68 +33,126 @@
 
 <!-- Add your site or application content here -->
 
-
-<div id="nav">
-  ecoVent
-  <div class="link">blog</div>
+<div class="container">
+  <div id="nav" class="row">
+    <img class="logo" src="images/logo2.png" />
+    <a class="centered" href="http://www.ecoventsystems.com/blog/">Blog</a>
+  </div>
 </div>
 
 
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner"></div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
+<!-- begin content -->
 
 
-  <div id="signup" class="full">
+<div class="image full" style="background-image:url('images/ecovent_rev.JPG')">
+  <div class="caption-wrapper caption-right">
+    <div class="caption">Make every room in your home the right temperature.</div>
+  </div>
+</div>
 
-    <form role="form" class="form-inline">
-      <div class="form-group">
-        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Name">
-        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-        <button type="submit" class="btn btn-warning btn-lg">Sign up!</button>
-      </div>
-    </form>
 
+<div class="container">
+
+
+  <div id="pitch" class="row">
+    <div class="col-sm-12 col-md-8 col-md-offset-2">
+      Every room in your home is different, but even the smartest thermostat can't individually regulate them. That means that some rooms are freezing cold while others are uncomfortably hot. ecoVent offers an easy and elegant solution for total home comfort.
+    </div>
   </div>
 
 
+  <div id="value-propositions" class="row">
+    <div class="col-xs-4">
+      <h1><i class="fa fa-clock-o"></i></h1>
+      <h2>Simple.</h2>
+      <p class="text-center">Vents install in minutes, improving comfort immediately.</p>
+    </div>
+    <div class="col-xs-4">
+      <h1><i class="fa fa-dollar"></i></h1>
+      <h2>Cost effective.</h2>
+      <p class="text-center">Stop wasting your money heating and cooling unused rooms.</p>
+    </div>
+    <div class="col-xs-4">
+      <h1><i class="fa fa-rocket"></i></h1>
+      <h2>Smart.</h2>
+      <p class="text-center">ecoVent automatically distributes conditioned air to make your whole home comfortable and energy efficient.</p>
+    </div>
+  </div>
+
+
+  <div id="video" class="row">
+    <div class="col-xs-12 text-center">
+      <iframe width="640" height="360" src="http://www.youtube.com/embed/WC89gel67-A" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+
+  <div id="specs" class="row">
+    <div class="col-xs-12">
+      <h1>Features</h1>
+    </div>
+
+    <div class="col-xs-4">
+      <h2>Convenient interface</h2>
+      <p>[come up with an image]
+      <p>Easily control individual rooms from your mobile device or computer.</p>
+    </div>
+    <div class="col-xs-4">
+      <h2>Intelligent wireless vent</h2>
+      <p><img src="images/model_vent.png" /></p>
+      <p>Vents automatically adjust to achieve optimal comfort and efficiency. They communicate wirelessly and run on household AA batteries for years.</p>
+    </div>
+    <div class="col-xs-4">
+      <h2>Advanced sensor suite</h2>
+      <p><img src="images/model_sensors.png" /></p>
+      <p>Sensor modules plug into any wall outlet to monitor the temperature of each room.</p>
+    </div>
+  </div>
 </div>
 
 
-<div class="full">
-  <p>ecoVent is a simple and cost-effective zoning system that intelligently eliminates temperature imbalance between rooms. We are currently in beta and some more words should go here.
+<div id="content">
+
+<!--
+  <div class="full">
+    <a class="button" href="info.html">Click to learn more!</a>
+  </div>
+-->
+
+</div> <!-- end content -->
+
+
+<div id="footer" class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-9">
+      <h2>About</h2>
+      <p><a href="index.html">Home</a>
+      <p>Team
+      <p><a href="http://www.ecoventsystems.com/blog/">Blog</a>
+      <p>
+        <a href="http://www.facebook.com/pages/Ecovent-Systems/479465472091275"><i class="fa fa-facebook-square"></i></a>
+        <a href="https://twitter.com/EcoVentSystems"><i class="fa fa-twitter-square"></i></a>
+        <a href="https://plus.google.com/b/104225458808112914446/104225458808112914446/posts"><i class="fa fa-google-plus-square"></i></a>
+    </div>
+    <div class="col-xs-12 col-md-3">
+      <h2>Contact us</h2>
+      <p><a href="mailto:info@ecoventsystems.com"><i class="fa fa-envelope"></i> info@ecoventsystems.com</a>
+      <p><a href="tel:856-343-2349"><i class="fa fa-phone"></i> (620) 983 6863</a>
+      <p><i class="fa fa-map-marker"></i> Cambridge, MA 02139
+    </div>
+  </div>
 </div>
 
-<div class="full">
-  <iframe width="640" height="360" src="http://www.youtube.com/embed/WC89gel67-A" frameborder="0" allowfullscreen></iframe>
-</div>
 
-<div class="full">
-  <button type="submit" class="btn btn-warning btn-lg">Click to learn more!</button>
-</div>
-
-
-<!-- end content -->
+<!-- end page -->
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <script src="javascripts/mustache.js"></script>
+    <script src="javascripts/handlebars-v1.3.0.js"></script>
+
+    <script src="javascripts/FlexSlider-version-2.2/jquery.flexslider-min.js"></script>
 
     <script src="javascripts/index.js"></script>
 
