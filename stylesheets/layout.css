@@ -1,25 +1,112 @@
 /* generalized functionality */
 @font-face {
   font-family: "CodePro";
-  src: url("fonts/Code_Pro_Demo-webfont.eot");
-  src: url("fonts/Code_Pro_Demo-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Code_Pro_Demo-webfont.woff") format("woff"), url("fonts/Code_Pro_Demo-webfont.ttf") format("truetype"), url("fonts/Code_Pro_Demo-webfont.svg#CodeProDemoRegular") format("svg");
-  src: local("fonts/Code_Pro_Demo-webfont.otf") format("opentype");
+  src: url("../fonts/Code_Pro_Demo-webfont.eot");
+  src: url("../fonts/Code_Pro_Demo-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Code_Pro_Demo-webfont.woff") format("woff"), url("../fonts/Code_Pro_Demo-webfont.ttf") format("truetype"), url("../fonts/Code_Pro_Demo-webfont.svg#CodeProDemoRegular") format("svg");
+  src: local("../fonts/Code_Pro_Demo-webfont.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "CodeProLight";
-  src: url("fonts/Code_Pro_Light_Demo-webfont.eot");
-  src: url("fonts/Code_Pro_Light_Demo-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Code_Pro_Light_Demo-webfont.woff") format("woff"), url("fonts/Code_Pro_Light_Demo-webfont.ttf") format("truetype"), url("fonts/Code_Pro_Light_Demo-webfont.svg#CodeProLightDemoRegular") format("svg");
-  src: local("fonts/Code_Pro_Light_Demo-webfont.otf") format("opentype");
+  src: url("../fonts/Code_Pro_Light_Demo-webfont.eot");
+  src: url("../fonts/Code_Pro_Light_Demo-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Code_Pro_Light_Demo-webfont.woff") format("woff"), url("../fonts/Code_Pro_Light_Demo-webfont.ttf") format("truetype"), url("../fonts/Code_Pro_Light_Demo-webfont.svg#CodeProLightDemoRegular") format("svg");
+  src: local("../fonts/Code_Pro_Light_Demo-webfont.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
+@font-face {
+  font-family: "MuseoSlab";
+  src: url("../fonts/Museo_Slab_500_2-webfont.eot");
+  src: url("../fonts/Museo_Slab_500_2-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo_Slab_500_2-webfont.woff") format("woff"), url("../fonts/Museo_Slab_500_2-webfont.ttf") format("truetype");
+  src: local("../fonts/Museo_Slab_500_2-webfont.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MuseoSans";
+  src: url("../fonts/MuseoSans_500-webfont.eot");
+  src: url("../fonts/MuseoSans_500-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans_500-webfont.woff") format("woff"), url("../fonts/MuseoSans_500-webfont.ttf") format("truetype");
+  src: local("../fonts/MuseoSans_500-webfont.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sofia";
+  src: url("../fonts/SofiaProLight-webfont.eot");
+  src: url("../fonts/SofiaProLight-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/SofiaProLight-webfont.woff") format("woff"), url("../fonts/SofiaProLight-webfont.ttf") format("truetype");
+  src: local("../fonts/SofiaProLight-webfont.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CynthoSlab";
+  src: url("../fonts/CynthoSlabPro-Regular-webfont.eot");
+  src: url("../fonts/CynthoSlabPro-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/CynthoSlabPro-Regular-webfont.woff") format("woff"), url("../fonts/CynthoSlabPro-Regular-webfont.ttf") format("truetype");
+  src: local("../fonts/CynthoSlabPro-Regular-webfont.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CynthoSlab";
+  src: url("../fonts/CynthoSlabPro-Italic-webfont.eot");
+  src: url("../fonts/CynthoSlabPro-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/CynthoSlabPro-Italic-webfont.woff") format("woff"), url("../fonts/CynthoSlabPro-Italic-webfont.ttf") format("truetype");
+  src: local("../fonts/CynthoSlabPro-Regular-webfont.otf") format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Italic.otf") format("opentype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Light.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-LightItalic.otf") format("opentype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-BoldItalic.otf") format("opentype");
+  font-weight: bold;
+  font-style: italic;
+}
+
 /* variables */
 /* mixins */
-/* line 31, ../sass/global.sass */
+/* line 36, ../sass/global.sass */
 .inset {
   -moz-box-shadow: inset 0 10px 10px -10px #666666, inset 0 -10px 10px -10px #666666;
   -webkit-box-shadow: inset 0 10px 10px -10px #666666, inset 0 -10px 10px -10px #666666;
@@ -27,7 +114,7 @@
 }
 
 /* styles */
-/* line 46, ../sass/global.sass */
+/* line 51, ../sass/global.sass */
 body {
   box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -36,34 +123,48 @@ body {
   color: #333333;
 }
 
-/* line 51, ../sass/global.sass */
+/* line 56, ../sass/global.sass */
 h3 {
   margin-bottom: 15px;
 }
 
-/* line 54, ../sass/global.sass */
+/* line 59, ../sass/global.sass */
+a {
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+/* line 61, ../sass/global.sass */
 a, a:link, a:hover, a:active, a:visited {
   text-decoration: none;
   color: #333333;
 }
 
-/* line 58, ../sass/global.sass */
+/* line 64, ../sass/global.sass */
+a:hover {
+  color: #00cef2;
+}
+
+/* line 67, ../sass/global.sass */
 .hidden {
   display: none;
 }
 
-/* line 61, ../sass/global.sass */
+/* line 70, ../sass/global.sass */
 .clear {
   clear: both;
 }
 
-/* line 64, ../sass/global.sass */
+/* line 73, ../sass/global.sass */
 .full {
   width: 100%;
   padding: 20px 150px;
 }
 
-/* line 67, ../sass/global.sass */
+/* line 76, ../sass/global.sass */
 a.button {
   cursor: pointer;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -92,18 +193,18 @@ a.button {
   background-color: #ff3a6b;
   text-shadow: none;
 }
-/* line 76, ../sass/global.sass */
+/* line 85, ../sass/global.sass */
 a.button:hover {
   background-color: #d31818;
 }
 
 /* bootstrap override */
-/* line 81, ../sass/global.sass */
+/* line 90, ../sass/global.sass */
 .carousel .carousel-control {
   width: 40px;
 }
 
-/* line 85, ../sass/global.sass */
+/* line 94, ../sass/global.sass */
 .carousel.carousel-fade .item {
   -moz-transition: opacity 0.5s;
   -ms-transition: opacity 0.5s;
@@ -112,24 +213,24 @@ a.button:hover {
   transition: opacity 0.5s;
   opacity: 0;
 }
-/* line 88, ../sass/global.sass */
+/* line 97, ../sass/global.sass */
 .carousel.carousel-fade .item.active {
   opacity: 1;
 }
 
-/* line 91, ../sass/global.sass */
+/* line 100, ../sass/global.sass */
 button {
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
 }
 
 /* line 4, ../sass/layout.sass */
 ::-moz-selection {
-  background-color: #bbff9b;
+  background-color: #ffdfbd;
 }
 
 /* line 6, ../sass/layout.sass */
 ::selection {
-  background-color: #bbff9b;
+  background-color: #ffdfbd;
 }
 
 /* line 10, ../sass/layout.sass */
@@ -186,10 +287,10 @@ p.center:last-child {
   height: 100%;
   line-height: 100%;
   float: right;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Quicksand, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-size: 16px;
-  margin-top: 1em;
+  font-size: 20px;
+  margin-top: 0.75em;
 }
 
 /* line 46, ../sass/layout.sass */
@@ -234,13 +335,13 @@ p.center:last-child {
   -o-transition: 0.2s;
   transition: 0.2s;
 }
-/* line 39, ../sass/global.sass */
+/* line 44, ../sass/global.sass */
 #footer a, #footer a:link, #footer a:active, #footer a:visited {
   color: white;
 }
-/* line 41, ../sass/global.sass */
+/* line 46, ../sass/global.sass */
 #footer a:hover {
-  color: #8cfd60;
+  color: #00cef2;
 }
 /* line 57, ../sass/layout.sass */
 #footer h2 {

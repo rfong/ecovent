@@ -3,11 +3,12 @@
 
 body
   font-size: 20px
-  font-family: Georgia, Trebuchet, serif
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+  +letterpress
 
 .container
-  h1,h2,h3
-    font-family: CodeProLight//, Helvetica, Arial, sans-serif
+  h1
+    font-family: Quicksand
   h2,h3
     display: inline-block
   .separator
@@ -64,10 +65,21 @@ body
 
     color: #000
     +letterpress
+    +unselectable
 
 
 .full.image
   height: 600px
+
+
+.section
+  position: relative
+  .image
+    position: absolute
+    height: 100%
+    opacity: 0.3
+    background-color: #00f
+    -webkit-filter: blur(5px)
 
 
 .row
@@ -85,10 +97,15 @@ body
 
 
 form
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
   input 
-    width: 20em
+    border: 1px solid #999 !important
+    width: 15em
     font-size: 20px !important
     color: #333
+    margin: 0 2px
+  input[type=email]
+    width: 20em
   button
     margin: 0 1em
     padding: 6px 12px

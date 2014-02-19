@@ -1,17 +1,104 @@
 @font-face {
   font-family: "CodePro";
-  src: url("fonts/Code_Pro_Demo-webfont.eot");
-  src: url("fonts/Code_Pro_Demo-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Code_Pro_Demo-webfont.woff") format("woff"), url("fonts/Code_Pro_Demo-webfont.ttf") format("truetype"), url("fonts/Code_Pro_Demo-webfont.svg#CodeProDemoRegular") format("svg");
-  src: local("fonts/Code_Pro_Demo-webfont.otf") format("opentype");
+  src: url("../fonts/Code_Pro_Demo-webfont.eot");
+  src: url("../fonts/Code_Pro_Demo-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Code_Pro_Demo-webfont.woff") format("woff"), url("../fonts/Code_Pro_Demo-webfont.ttf") format("truetype"), url("../fonts/Code_Pro_Demo-webfont.svg#CodeProDemoRegular") format("svg");
+  src: local("../fonts/Code_Pro_Demo-webfont.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "CodeProLight";
-  src: url("fonts/Code_Pro_Light_Demo-webfont.eot");
-  src: url("fonts/Code_Pro_Light_Demo-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Code_Pro_Light_Demo-webfont.woff") format("woff"), url("fonts/Code_Pro_Light_Demo-webfont.ttf") format("truetype"), url("fonts/Code_Pro_Light_Demo-webfont.svg#CodeProLightDemoRegular") format("svg");
-  src: local("fonts/Code_Pro_Light_Demo-webfont.otf") format("opentype");
+  src: url("../fonts/Code_Pro_Light_Demo-webfont.eot");
+  src: url("../fonts/Code_Pro_Light_Demo-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Code_Pro_Light_Demo-webfont.woff") format("woff"), url("../fonts/Code_Pro_Light_Demo-webfont.ttf") format("truetype"), url("../fonts/Code_Pro_Light_Demo-webfont.svg#CodeProLightDemoRegular") format("svg");
+  src: local("../fonts/Code_Pro_Light_Demo-webfont.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "MuseoSlab";
+  src: url("../fonts/Museo_Slab_500_2-webfont.eot");
+  src: url("../fonts/Museo_Slab_500_2-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo_Slab_500_2-webfont.woff") format("woff"), url("../fonts/Museo_Slab_500_2-webfont.ttf") format("truetype");
+  src: local("../fonts/Museo_Slab_500_2-webfont.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MuseoSans";
+  src: url("../fonts/MuseoSans_500-webfont.eot");
+  src: url("../fonts/MuseoSans_500-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans_500-webfont.woff") format("woff"), url("../fonts/MuseoSans_500-webfont.ttf") format("truetype");
+  src: local("../fonts/MuseoSans_500-webfont.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sofia";
+  src: url("../fonts/SofiaProLight-webfont.eot");
+  src: url("../fonts/SofiaProLight-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/SofiaProLight-webfont.woff") format("woff"), url("../fonts/SofiaProLight-webfont.ttf") format("truetype");
+  src: local("../fonts/SofiaProLight-webfont.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CynthoSlab";
+  src: url("../fonts/CynthoSlabPro-Regular-webfont.eot");
+  src: url("../fonts/CynthoSlabPro-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/CynthoSlabPro-Regular-webfont.woff") format("woff"), url("../fonts/CynthoSlabPro-Regular-webfont.ttf") format("truetype");
+  src: local("../fonts/CynthoSlabPro-Regular-webfont.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CynthoSlab";
+  src: url("../fonts/CynthoSlabPro-Italic-webfont.eot");
+  src: url("../fonts/CynthoSlabPro-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/CynthoSlabPro-Italic-webfont.woff") format("woff"), url("../fonts/CynthoSlabPro-Italic-webfont.ttf") format("truetype");
+  src: local("../fonts/CynthoSlabPro-Regular-webfont.otf") format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Italic.otf") format("opentype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Light.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-LightItalic.otf") format("opentype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-BoldItalic.otf") format("opentype");
+  font-weight: bold;
+  font-style: italic;
 }

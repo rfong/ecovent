@@ -10,6 +10,11 @@ $red: #e62e00
 $red-lite: #ff714d
 $red-dark: #c52700
 
+$blue: #00cef2
+$blue-lite: #78b7fa
+
+$orange-lite: #ffdfbd
+
 $font-color: #333
 
 /* mixins */
@@ -39,7 +44,7 @@ $font-color: #333
   a, a:link, a:active, a:visited
     color: #fff
   a:hover
-    color: #8cfd60
+    color: $blue
 
 /* styles */
 
@@ -51,9 +56,13 @@ body
 h3
   margin-bottom: 15px
 
+a
+  +transition
 a, a:link, a:hover, a:active, a:visited
   text-decoration: none
   color: $font-color
+a:hover
+  color: $blue
 
 .hidden
   display: none 
