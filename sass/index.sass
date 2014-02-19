@@ -1,4 +1,20 @@
 @import global
+@import fonts
+
+body
+  font-size: 20px
+  font-family: Georgia, Trebuchet, serif
+
+.container
+  h1,h2,h3
+    font-family: CodeProLight//, Helvetica, Arial, sans-serif
+  h2,h3
+    display: inline-block
+  .separator
+    width: 100%
+    padding-bottom: 1em
+    margin-bottom: 0.5em
+    border-bottom: 8px solid $green-lite
 
 
 .carousel
@@ -68,22 +84,17 @@
     max-width: 100%
 
 
-#signup
-  position: absolute
-  bottom: 0
-  background-color: rgba(255,255,255,0.4)
-  text-align: center
+form
+  input 
+    width: 20em
+    font-size: 20px !important
+    color: #333
+  button
+    margin: 0 1em
+    padding: 6px 12px
+    font-size: 20px !important
 
-  form
-    input 
-      width: 15em
-      font-size: 18px
-      color: #333
-    button
-      margin: 0 1em
-      padding: 6px 12px
-
-  .form-control, button
-    //border: 1px solid #999
-    +box-shadow(rgba(0,0,0,0.4), 1px, 0, 1px, 1px)
+.form-control, button
+  //border: 1px solid #999
+  +box-shadow(rgba(0,0,0,0.4), 1px, 0, 1px, 1px)
 

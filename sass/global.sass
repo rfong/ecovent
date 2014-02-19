@@ -1,4 +1,5 @@
 @import mixins
+@import fonts
 
 /* variables */
 
@@ -43,9 +44,7 @@ $font-color: #333
 /* styles */
 
 body
-  font-size: 20px
-  //font-family: 'Noto Sans', Helvetica, Arial, sans-serif
-  font-family: Georgia, Trebuchet, serif
+  //font-family: Georgia, Trebuchet, serif
   +border-box
   color: $font-color
 
@@ -92,4 +91,5 @@ a.button
 button
   //border-radius: 0 !important
   +text-glow(rgba(0,0,0,0.4))
+
 

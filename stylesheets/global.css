@@ -1,7 +1,25 @@
 /* generalized functionality */
+@font-face {
+  font-family: "CodePro";
+  src: url("fonts/Code_Pro_Demo-webfont.eot");
+  src: url("fonts/Code_Pro_Demo-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Code_Pro_Demo-webfont.woff") format("woff"), url("fonts/Code_Pro_Demo-webfont.ttf") format("truetype"), url("fonts/Code_Pro_Demo-webfont.svg#CodeProDemoRegular") format("svg");
+  src: local("fonts/Code_Pro_Demo-webfont.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CodeProLight";
+  src: url("fonts/Code_Pro_Light_Demo-webfont.eot");
+  src: url("fonts/Code_Pro_Light_Demo-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Code_Pro_Light_Demo-webfont.woff") format("woff"), url("fonts/Code_Pro_Light_Demo-webfont.ttf") format("truetype"), url("fonts/Code_Pro_Light_Demo-webfont.svg#CodeProLightDemoRegular") format("svg");
+  src: local("fonts/Code_Pro_Light_Demo-webfont.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* variables */
 /* mixins */
-/* line 30, ../sass/global.sass */
+/* line 31, ../sass/global.sass */
 .inset {
   -moz-box-shadow: inset 0 10px 10px -10px #666666, inset 0 -10px 10px -10px #666666;
   -webkit-box-shadow: inset 0 10px 10px -10px #666666, inset 0 -10px 10px -10px #666666;
@@ -9,10 +27,8 @@
 }
 
 /* styles */
-/* line 45, ../sass/global.sass */
+/* line 46, ../sass/global.sass */
 body {
-  font-size: 20px;
-  font-family: Georgia, Trebuchet, serif;
   box-sizing: border-box;
   -ms-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -20,34 +36,34 @@ body {
   color: #333333;
 }
 
-/* line 52, ../sass/global.sass */
+/* line 51, ../sass/global.sass */
 h3 {
   margin-bottom: 15px;
 }
 
-/* line 55, ../sass/global.sass */
+/* line 54, ../sass/global.sass */
 a, a:link, a:hover, a:active, a:visited {
   text-decoration: none;
   color: #333333;
 }
 
-/* line 59, ../sass/global.sass */
+/* line 58, ../sass/global.sass */
 .hidden {
   display: none;
 }
 
-/* line 62, ../sass/global.sass */
+/* line 61, ../sass/global.sass */
 .clear {
   clear: both;
 }
 
-/* line 65, ../sass/global.sass */
+/* line 64, ../sass/global.sass */
 .full {
   width: 100%;
   padding: 20px 150px;
 }
 
-/* line 68, ../sass/global.sass */
+/* line 67, ../sass/global.sass */
 a.button {
   cursor: pointer;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -76,18 +92,18 @@ a.button {
   background-color: #ff3a6b;
   text-shadow: none;
 }
-/* line 77, ../sass/global.sass */
+/* line 76, ../sass/global.sass */
 a.button:hover {
   background-color: #d31818;
 }
 
 /* bootstrap override */
-/* line 82, ../sass/global.sass */
+/* line 81, ../sass/global.sass */
 .carousel .carousel-control {
   width: 40px;
 }
 
-/* line 86, ../sass/global.sass */
+/* line 85, ../sass/global.sass */
 .carousel.carousel-fade .item {
   -moz-transition: opacity 0.5s;
   -ms-transition: opacity 0.5s;
@@ -96,12 +112,12 @@ a.button:hover {
   transition: opacity 0.5s;
   opacity: 0;
 }
-/* line 89, ../sass/global.sass */
+/* line 88, ../sass/global.sass */
 .carousel.carousel-fade .item.active {
   opacity: 1;
 }
 
-/* line 92, ../sass/global.sass */
+/* line 91, ../sass/global.sass */
 button {
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
 }
