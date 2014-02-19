@@ -1,6 +1,11 @@
 @import global
 
 
+=accent-style
+  font-family: Quicksand, 'Helvetica Neue', Helvetica, Arial, sans-serif !important
+  text-transform: uppercase
+  font-size: 20px
+
 ::-moz-selection
   background-color: $orange-lite
 ::selection 
@@ -25,6 +30,7 @@ p.center
 
 #nav
   padding: 25px 0
+  padding-right: 10px
   +vertical-center
   font-size: 30px
   position: relative
@@ -38,14 +44,13 @@ p.center
     height: 100%
     line-height: 100%
     float: right
-    font-family: Quicksand, 'Helvetica Neue', Helvetica, Arial, sans-serif
-    text-transform: uppercase
-    font-size: 20px
     margin-top: 0.75em
+    +accent-style
 
 .button
+  +accent-style
   &:hover
-    background-color: $green-lite
+    background-color: $blue-lite
   +button
 
 

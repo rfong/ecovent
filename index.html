@@ -33,22 +33,21 @@
 
 <!-- Add your site or application content here -->
 
+<div id="upright">
+  <div class="button">Get updates</div>
+</div>
+
 <div class="container">
-  <div id="nav" class="row">
+  <div id="nav" class="row text-center">
     <img class="logo" src="images/logo2.png" />
-    <a class="centered" href="http://www.ecoventsystems.com/blog/">Blog</a>
+    <!--<a class="centered" href="http://www.ecoventsystems.com/blog/">Blog</a>-->
   </div>
 </div>
 
 
 <!-- begin content -->
 
-
-<div class="image full" style="background-image:url('images/ecovent_rev.jpg')">
-  <div class="caption-wrapper caption-right">
-    <div class="caption">Make every room in your home the right temperature.</div>
-  </div>
-</div>
+<img style="width:100%" src="images/ecovent_captioned.jpg" />
 
 
 <div class="container">
@@ -89,7 +88,14 @@
 
     <div id="video" class="row">
       <div class="col-xs-12 text-center">
-        <iframe width="640" height="360" src="http://www.youtube.com/embed/WC89gel67-A" frameborder="0" allowfullscreen></iframe>
+        <!-- xs/sm -->
+        <div class="hidden-md hidden-lg">
+          <iframe width="640" height="360" src="http://www.youtube.com/embed/WC89gel67-A" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <!-- md/lg -->
+        <div class="hidden-xs hidden-sm">
+          <iframe width="800" height="450" src="http://www.youtube.com/embed/WC89gel67-A" frameborder="0" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
 

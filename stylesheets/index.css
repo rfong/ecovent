@@ -106,7 +106,7 @@
 
 /* variables */
 /* mixins */
-/* line 36, ../sass/global.sass */
+/* line 37, ../sass/global.sass */
 .inset {
   -moz-box-shadow: inset 0 10px 10px -10px #666666, inset 0 -10px 10px -10px #666666;
   -webkit-box-shadow: inset 0 10px 10px -10px #666666, inset 0 -10px 10px -10px #666666;
@@ -114,7 +114,7 @@
 }
 
 /* styles */
-/* line 51, ../sass/global.sass */
+/* line 52, ../sass/global.sass */
 body {
   box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -123,12 +123,17 @@ body {
   color: #333333;
 }
 
-/* line 56, ../sass/global.sass */
+/* line 57, ../sass/global.sass */
 h3 {
   margin-bottom: 15px;
 }
 
-/* line 59, ../sass/global.sass */
+/* line 60, ../sass/global.sass */
+hr {
+  border-top: 1px solid #d7d9eb;
+}
+
+/* line 63, ../sass/global.sass */
 a {
   -moz-transition: 0.2s;
   -ms-transition: 0.2s;
@@ -137,34 +142,34 @@ a {
   transition: 0.2s;
 }
 
-/* line 61, ../sass/global.sass */
+/* line 65, ../sass/global.sass */
 a, a:link, a:hover, a:active, a:visited {
   text-decoration: none;
   color: #333333;
 }
 
-/* line 64, ../sass/global.sass */
+/* line 68, ../sass/global.sass */
 a:hover {
-  color: #00cef2;
+  color: #4db2ff;
 }
 
-/* line 67, ../sass/global.sass */
+/* line 71, ../sass/global.sass */
 .hidden {
   display: none;
 }
 
-/* line 70, ../sass/global.sass */
+/* line 74, ../sass/global.sass */
 .clear {
   clear: both;
 }
 
-/* line 73, ../sass/global.sass */
+/* line 77, ../sass/global.sass */
 .full {
   width: 100%;
   padding: 20px 150px;
 }
 
-/* line 76, ../sass/global.sass */
+/* line 80, ../sass/global.sass */
 a.button {
   cursor: pointer;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -193,18 +198,18 @@ a.button {
   background-color: #ff3a6b;
   text-shadow: none;
 }
-/* line 85, ../sass/global.sass */
+/* line 89, ../sass/global.sass */
 a.button:hover {
   background-color: #d31818;
 }
 
 /* bootstrap override */
-/* line 90, ../sass/global.sass */
+/* line 94, ../sass/global.sass */
 .carousel .carousel-control {
   width: 40px;
 }
 
-/* line 94, ../sass/global.sass */
+/* line 98, ../sass/global.sass */
 .carousel.carousel-fade .item {
   -moz-transition: opacity 0.5s;
   -ms-transition: opacity 0.5s;
@@ -213,12 +218,12 @@ a.button:hover {
   transition: opacity 0.5s;
   opacity: 0;
 }
-/* line 97, ../sass/global.sass */
+/* line 101, ../sass/global.sass */
 .carousel.carousel-fade .item.active {
   opacity: 1;
 }
 
-/* line 100, ../sass/global.sass */
+/* line 104, ../sass/global.sass */
 button {
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
 }
@@ -328,30 +333,44 @@ button {
   font-style: italic;
 }
 
-/* line 4, ../sass/index.sass */
+/* line 5, ../sass/index.sass */
 body {
   font-size: 20px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.5pt;
   text-shadow: 1px 1px rgba(255, 255, 255, 0.4);
 }
 
-/* line 10, ../sass/index.sass */
+/* line 13, ../sass/index.sass */
+#upright {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  z-index: 10;
+}
+/* line 19, ../sass/index.sass */
+#upright .button {
+  font-weight: bold;
+  color: #4db2ff;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+/* line 23, ../sass/index.sass */
+#upright .button:hover {
+  color: #4d69ff;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* line 29, ../sass/index.sass */
 .container h1 {
   font-family: Quicksand;
 }
-/* line 12, ../sass/index.sass */
+/* line 31, ../sass/index.sass */
 .container h2, .container h3 {
   display: inline-block;
 }
-/* line 14, ../sass/index.sass */
-.container .separator {
-  width: 100%;
-  padding-bottom: 1em;
-  margin-bottom: 0.5em;
-  border-bottom: 8px solid #bbff9b;
-}
 
-/* line 21, ../sass/index.sass */
+/* line 35, ../sass/index.sass */
 .carousel {
   height: 600px;
   -moz-box-shadow: inset 0 10px 10px -10px #666666, inset 0 -10px 10px -10px #666666;
@@ -359,17 +378,17 @@ body {
   box-shadow: inset 0 10px 10px -10px #666666, inset 0 -10px 10px -10px #666666;
   margin-bottom: 20px;
 }
-/* line 26, ../sass/index.sass */
+/* line 40, ../sass/index.sass */
 .carousel .carousel-inner, .carousel .item {
   height: 100%;
   position: relative;
 }
-/* line 30, ../sass/index.sass */
+/* line 44, ../sass/index.sass */
 .carousel .carousel-indicators {
   bottom: 80px;
 }
 
-/* line 38, ../sass/index.sass */
+/* line 52, ../sass/index.sass */
 .image {
   position: relative;
   height: 100%;
@@ -379,7 +398,7 @@ body {
   background-position: center center;
 }
 
-/* line 47, ../sass/index.sass */
+/* line 61, ../sass/index.sass */
 .caption-wrapper {
   position: absolute;
   display: table;
@@ -390,12 +409,12 @@ body {
   text-align: center;
   font-size: 40px;
 }
-/* line 57, ../sass/index.sass */
+/* line 71, ../sass/index.sass */
 .caption-wrapper.caption-right {
   left: auto;
   right: 10%;
 }
-/* line 61, ../sass/index.sass */
+/* line 75, ../sass/index.sass */
 .caption-wrapper .caption {
   display: table-cell;
   vertical-align: middle;
@@ -409,16 +428,21 @@ body {
   user-select: none;
 }
 
-/* line 71, ../sass/index.sass */
+/* line 85, ../sass/index.sass */
+.full {
+  width: 100%;
+}
+
+/* line 88, ../sass/index.sass */
 .full.image {
   height: 600px;
 }
 
-/* line 75, ../sass/index.sass */
+/* line 92, ../sass/index.sass */
 .section {
   position: relative;
 }
-/* line 77, ../sass/index.sass */
+/* line 94, ../sass/index.sass */
 .section .image {
   position: absolute;
   height: 100%;
@@ -427,33 +451,33 @@ body {
   -webkit-filter: blur(5px);
 }
 
-/* line 85, ../sass/index.sass */
+/* line 102, ../sass/index.sass */
 .row {
   padding: 20px 0;
 }
-/* line 87, ../sass/index.sass */
+/* line 104, ../sass/index.sass */
 .row:first-child {
   padding-top: 40px;
 }
-/* line 89, ../sass/index.sass */
+/* line 106, ../sass/index.sass */
 .row:last-child {
   padding-bottom: 40px;
 }
 
-/* line 93, ../sass/index.sass */
+/* line 110, ../sass/index.sass */
 #value-propositions > div, #specs > div {
   text-align: center;
 }
-/* line 95, ../sass/index.sass */
+/* line 112, ../sass/index.sass */
 #value-propositions > div img, #specs > div img {
   max-width: 100%;
 }
 
-/* line 99, ../sass/index.sass */
+/* line 116, ../sass/index.sass */
 form {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-/* line 101, ../sass/index.sass */
+/* line 118, ../sass/index.sass */
 form input {
   border: 1px solid #999999 !important;
   width: 15em;
@@ -461,18 +485,18 @@ form input {
   color: #333333;
   margin: 0 2px;
 }
-/* line 107, ../sass/index.sass */
+/* line 124, ../sass/index.sass */
 form input[type=email] {
   width: 20em;
 }
-/* line 109, ../sass/index.sass */
+/* line 126, ../sass/index.sass */
 form button {
   margin: 0 1em;
   padding: 6px 12px;
   font-size: 20px !important;
 }
 
-/* line 114, ../sass/index.sass */
+/* line 131, ../sass/index.sass */
 .form-control, button {
   -moz-box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px 0;
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px 0;

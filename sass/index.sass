@@ -1,21 +1,35 @@
 @import global
 @import fonts
 
+
 body
   font-size: 20px
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+  font-weight: 300
+  letter-spacing: 0.5pt
   +letterpress
+
+
+#upright
+  position: fixed
+  top: 15px
+  right: 20px
+  z-index: 10
+
+  .button
+    font-weight: bold
+    color: $blue
+    background-color: rgba(255,255,255,0.6)
+    &:hover
+      color: $blue-dark
+      background-color: rgba(255,255,255,0.9)
+
 
 .container
   h1
     font-family: Quicksand
   h2,h3
     display: inline-block
-  .separator
-    width: 100%
-    padding-bottom: 1em
-    margin-bottom: 0.5em
-    border-bottom: 8px solid $green-lite
 
 
 .carousel
@@ -68,6 +82,9 @@ body
     +unselectable
 
 
+.full
+  width: 100%
+
 .full.image
   height: 600px
 
@@ -114,4 +131,6 @@ form
 .form-control, button
   //border: 1px solid #999
   +box-shadow(rgba(0,0,0,0.4), 1px, 0, 1px, 1px)
+
+
 
