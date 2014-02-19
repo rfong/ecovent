@@ -34,8 +34,35 @@
 <!-- Add your site or application content here -->
 
 <div id="upright">
-  <div class="button">Get updates</div>
+  <div class="button" data-toggle="modal" data-target="#signup-modal">Get updates</div>
 </div>
+
+<!-- signup modal -->
+<div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Mailing list signup</h4>
+      </div>
+      <div class="modal-body">
+        
+        <form action="http://ecoventsystems.us7.list-manage.com/subscribe/post?u=01a02dc133785cf2f3e3363dc&amp;id=70eb4e3932" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" role="form" novalidate>
+          <p>
+            <input type="text" value="" name="FNAME" class="required email form-control" id="mce-FNAME" placeholder="First name">
+          <p>
+            <input type="text" value="" name="LNAME" class="required email form-control" id="mce-LNAME" placeholder="Last name">
+          <p>
+            <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Email">
+          <p>
+            <button type="submit" class="button">Sign me up!</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <div class="container">
   <div id="nav" class="row text-center">
@@ -110,7 +137,7 @@
           <p>
             <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Email">
           <p>
-            <button type="submit" class="btn btn-warning btn-lg float-left">Sign up for updates</button>
+            <button type="submit" class="button">Sign me up!</button>
         </form>
 
       </div>

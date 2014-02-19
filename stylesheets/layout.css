@@ -223,11 +223,6 @@ a.button:hover {
   opacity: 1;
 }
 
-/* line 104, ../sass/global.sass */
-button {
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
-}
-
 /* line 9, ../sass/layout.sass */
 ::-moz-selection {
   background-color: #ffdfbd;
@@ -301,9 +296,6 @@ p.center:last-child {
 
 /* line 50, ../sass/layout.sass */
 .button {
-  font-family: Quicksand, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  text-transform: uppercase;
-  font-size: 20px;
   cursor: pointer;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   text-decoration: none;
@@ -325,13 +317,19 @@ p.center:last-child {
   -o-border-radius: 5px;
   border-radius: 5px;
   border-style: none;
+  font-family: Quicksand, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #4db2ff;
+  text-shadow: 2px 2px rgba(255, 255, 255, 0.4);
 }
-/* line 52, ../sass/layout.sass */
+/* line 55, ../sass/layout.sass */
 .button:hover {
-  background-color: #78b7fa;
+  background-color: #4d69ff;
 }
 
-/* line 57, ../sass/layout.sass */
+/* line 60, ../sass/layout.sass */
 #footer {
   width: 100%;
   padding: 20px 150px;
@@ -352,16 +350,16 @@ p.center:last-child {
 #footer a:hover {
   color: #4db2ff;
 }
-/* line 62, ../sass/layout.sass */
+/* line 65, ../sass/layout.sass */
 #footer h2 {
   margin-top: 0;
   margin-bottom: 20px;
 }
-/* line 66, ../sass/layout.sass */
+/* line 69, ../sass/layout.sass */
 #footer .row > div {
   padding: 10px 0;
 }
-/* line 69, ../sass/layout.sass */
+/* line 72, ../sass/layout.sass */
 #footer .fa {
   margin-right: 0.5em;
 }
