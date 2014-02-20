@@ -267,32 +267,23 @@ a.button:hover {
 }
 
 /* line 15, ../sass/layout.sass */
-#content {
-  box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  padding: 30px 0;
-}
-
-/* line 19, ../sass/layout.sass */
 .text-center {
   text-align: center;
 }
 
-/* line 22, ../sass/layout.sass */
+/* line 18, ../sass/layout.sass */
 p.center {
   width: 640px;
   margin: 0 auto;
   text-align: left;
   margin-bottom: 1em;
 }
-/* line 27, ../sass/layout.sass */
+/* line 23, ../sass/layout.sass */
 p.center:last-child {
   margin-bottom: 0;
 }
 
-/* line 31, ../sass/layout.sass */
+/* line 27, ../sass/layout.sass */
 #nav {
   padding: 25px 0;
   padding-right: 10px;
@@ -312,11 +303,11 @@ p.center:last-child {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 38, ../sass/layout.sass */
+/* line 34, ../sass/layout.sass */
 #nav .logo {
   height: 45px;
 }
-/* line 41, ../sass/layout.sass */
+/* line 37, ../sass/layout.sass */
 #nav a {
   height: 100%;
   line-height: 100%;
@@ -327,7 +318,7 @@ p.center:last-child {
   font-size: 20px;
 }
 
-/* line 50, ../sass/layout.sass */
+/* line 46, ../sass/layout.sass */
 .button {
   cursor: pointer;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -357,12 +348,12 @@ p.center:last-child {
   background-color: #4db2ff;
   text-shadow: 2px 2px rgba(255, 255, 255, 0.4);
 }
-/* line 55, ../sass/layout.sass */
+/* line 51, ../sass/layout.sass */
 .button:hover {
   background-color: #4d69ff;
 }
 
-/* line 60, ../sass/layout.sass */
+/* line 56, ../sass/layout.sass */
 #footer {
   width: 100%;
   padding: 20px 150px;
@@ -383,16 +374,16 @@ p.center:last-child {
 #footer a:hover {
   color: #4db2ff;
 }
-/* line 65, ../sass/layout.sass */
+/* line 61, ../sass/layout.sass */
 #footer h2 {
   margin-top: 0;
   margin-bottom: 20px;
 }
-/* line 69, ../sass/layout.sass */
+/* line 65, ../sass/layout.sass */
 #footer .row > div {
   padding: 10px 0;
 }
-/* line 72, ../sass/layout.sass */
+/* line 68, ../sass/layout.sass */
 #footer .fa {
   margin-right: 0.5em;
 }

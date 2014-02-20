@@ -15,15 +15,15 @@
     <link rel="stylesheet" href="stylesheets/normalize.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.css">
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="stylesheets/FlexSlider-version-2.2/flexslider.css">
-
-    <!-- google web fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
     <!-- custom -->
     <link rel="stylesheet" href="stylesheets/layout.css">
     <link rel="stylesheet" href="stylesheets/index.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="javascripts/handlebars-v1.3.0.js"></script>
 
   </head>
   <body>
@@ -34,191 +34,273 @@
 
 <!-- Add your site or application content here -->
 
-<div id="upright" class="hidden-xs hidden-sm">
-  <div class="button" data-toggle="modal" data-target="#signup-modal">Get updates</div>
-</div>
+<div id="header">
 
-<!-- signup modal -->
-<div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Mailing list signup</h4>
-      </div>
-      <div class="modal-body">
-        
-        <form action="http://ecoventsystems.us7.list-manage.com/subscribe/post?u=01a02dc133785cf2f3e3363dc&amp;id=70eb4e3932" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" role="form" novalidate>
-          <p>
-            <input type="text" value="" name="FNAME" class="required email form-control" id="mce-FNAME" placeholder="First name">
-          <p>
-            <input type="text" value="" name="LNAME" class="required email form-control" id="mce-LNAME" placeholder="Last name">
-          <p>
-            <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Email">
-          <p>
-            <button type="submit" class="button">Sign me up!</button>
-        </form>
-
-      </div>
-    </div>
+  <div id="upright" class="hidden-xs hidden-sm">
+    <div class="button" data-toggle="modal" data-target="#signup-modal">Get updates</div>
   </div>
-</div>
 
-
-<div class="container">
-  <div id="nav" class="row text-center">
-    <img class="logo" src="images/logo2.png" />
-    <!--<a class="centered" href="http://www.ecoventsystems.com/blog/">Blog</a>-->
+  <div class="container">
+    <div id="nav" class="row text-center">
+      <img class="logo" src="images/logo2.png" />
+      <!--<a class="centered" href="http://www.ecoventsystems.com/blog/">Blog</a>-->
+    </div>
   </div>
 </div>
 
 
 <!-- begin content -->
 
-<img style="width:100%" src="images/ecovent_captioned.jpg" />
+<div id="content">
+
+  <img style="width:100%" src="images/ecovent_captioned.jpg" />
 
 
-<div class="container">
+  <div class="section">
+    <div class="container">
 
-
-  <div id="pitch" class="row">
-    <div class="col-sm-12 col-md-8 col-md-offset-2">
-      Every room in your home is different, but even the smartest thermostat can't individually regulate them. That means that some rooms are freezing cold while others are uncomfortably hot. ecoVent offers an easy and elegant solution for total home comfort.
-    </div>
-  </div>
-
-
-  <div id="value-propositions" class="row">
-    <div class="col-sm-4 col-xs-12">
-      <h1><i class="fa fa-clock-o"></i></h1>
-      <h2>Simple.</h2>
-      <p class="text-center">Vents install in minutes, improving comfort immediately.</p>
-    </div>
-    <div class="col-sm-4 col-xs-12">
-      <h1><i class="fa fa-dollar"></i></h1>
-      <h2>Cost effective.</h2>
-      <p class="text-center">Stop wasting your money heating and cooling unused rooms.</p>
-    </div>
-    <div class="col-sm-4 col-xs-12">
-      <h1><i class="fa fa-rocket"></i></h1>
-      <h2>Smart.</h2>
-      <p class="text-center">ecoVent automatically distributes conditioned air to make your whole home comfortable and energy efficient.</p>
-    </div>
-  </div>
-
-</div>
-
-
-<div class="section">
-  <div class="image full" style="background-image:url('images/windmills.JPG')"></div>
-
-  <div class="container">
-
-    <div id="video" class="row">
-      <div class="col-xs-12 text-center">
-        <!-- xs -->
-        <div class="visible-xs">
-          <iframe width="560" height="315" src="http://www.youtube.com/embed/WC89gel67-A" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <!-- sm -->
-        <div class="visible-sm">
-          <iframe width="640" height="360" src="http://www.youtube.com/embed/WC89gel67-A" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <!-- md/lg -->
-        <div class="hidden-xs hidden-sm">
-          <iframe width="800" height="450" src="http://www.youtube.com/embed/WC89gel67-A" frameborder="0" allowfullscreen></iframe>
+      <div id="video">
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <!-- xs -->
+            <div class="visible-xs">
+              <iframe width="560" height="315" src="http://www.youtube.com/embed/WC89gel67-A" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <!-- sm -->
+            <div class="visible-sm">
+              <iframe width="640" height="360" src="http://www.youtube.com/embed/WC89gel67-A" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <!-- md/lg -->
+            <div class="hidden-xs hidden-sm">
+              <iframe width="800" height="450" src="http://www.youtube.com/embed/WC89gel67-A" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
 
-    <div id="signup" class="row">
-      <div class="col-xs-12 text-center">
-
-        <form action="http://ecoventsystems.us7.list-manage.com/subscribe/post?u=01a02dc133785cf2f3e3363dc&amp;id=70eb4e3932" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" role="form" novalidate>
-          <p>
-            <input type="text" value="" name="FNAME" class="required email form-control" id="mce-FNAME" placeholder="First name">
-          <p>
-            <input type="text" value="" name="LNAME" class="required email form-control" id="mce-LNAME" placeholder="Last name">
-          <p>
-            <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Email">
-          <p>
-            <button type="submit" class="button">Sign me up!</button>
-        </form>
-
-      </div>
-    </div>
-
-  </div>
-</div>
-
-
-<div class="section">
-
-  <div class="container">
-
-    <div id="specs" class="row">
-      <div class="col-xs-12">
-        <h1>the ecoVent system</h1>
-        <hr />
+      <div id="signup" class="row">
+        <div class="col-xs-12 text-center">
+        </div>
       </div>
 
-      <div class="col-sm-4 col-xs-12">
-        <h2>Convenient interface</h2>
-        <p>[come up with an image]
-        <p>Easily control individual rooms from your mobile device or computer.</p>
-      </div>
-      <div class="col-sm-4 col-xs-12">
-        <h2>Intelligent wireless vent</h2>
-        <p><img src="images/model_vent.png" /></p>
-        <p>Vents automatically adjust to achieve optimal comfort and efficiency. They communicate wirelessly and run on household AA batteries for years.</p>
-      </div>
-      <div class="col-sm-4 col-xs-12">
-        <h2>Advanced sensor suite</h2>
-        <p><img src="images/model_sensors.png" /></p>
-        <p>Sensor modules plug into any wall outlet to monitor the temperature of each room.</p>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-
-
-<div id="footer" class="container">
-  <div class="row">
-    <div class="col-xs-12 col-md-7">
-      <h2>About</h2>
-      <p><a href="index.html">Home</a>
-      <!--<p>Team-->
-      <p><a href="http://www.ecoventsystems.com/blog/">Blog</a>
-      <p>
-        <a href="http://www.facebook.com/pages/Ecovent-Systems/479465472091275"><i class="fa fa-facebook-square"></i></a>
-        <a href="https://twitter.com/EcoVentSystems"><i class="fa fa-twitter-square"></i></a>
-        <a href="https://plus.google.com/b/104225458808112914446/104225458808112914446/posts"><i class="fa fa-google-plus-square"></i></a>
-    </div>
-    <div class="col-xs-12 col-md-5">
-      <h2>Contact us</h2>
-      <p><a href="mailto:info@ecoventsystems.com"><i class="fa fa-envelope"></i> info@ecoventsystems.com</a>
-      <p><a href="tel:856-343-2349"><i class="fa fa-phone"></i> (620) 983 6863</a>
-      <p><i class="fa fa-map-marker"></i> Cambridge, MA 02139
     </div>
   </div>
+
+
+
+  <div class="section">
+    <div class="image full" style="background-image:url('images/windmills.JPG')"></div>
+
+    <div class="container">
+      <!--
+      <div id="pitch">
+        <div class="row">
+          <div class="col-sm-12 col-md-8 col-md-offset-2">
+            Every room in your home is different, but even the smartest thermostat can't individually regulate them. That means that some rooms are freezing cold while others are uncomfortably hot. ecoVent offers an easy and elegant solution for total home comfort.
+          </div>
+        </div>
+      </div>
+      -->
+      <div id="value-propositions"></div>
+    </div>
+    
+  </div>
+
+
+
+  <div class="section">
+    <div class="container">
+      <div id="specs"></div>
+    </div>
+  </div>
+
 </div>
 
+<div id="footer"></div>
 
 <!-- end page -->
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-    <script src="javascripts/mustache.js"></script>
-    <!--
-    <script src="javascripts/handlebars-v1.3.0.js"></script>
-    <script src="javascripts/FlexSlider-version-2.2/jquery.flexslider-min.js"></script>
-  -->
 
-    <!--<script src="javascripts/index.js"></script>-->
+  <!-- handlebars templates -->
+
+    <!-- header template -->
+    <script id="template-header" type="text/x-handlebars-template">
+      <div id="upright" class="hidden-xs hidden-sm">
+        <div class="button" data-toggle="modal" data-target="#signup-modal">Get updates</div>
+      </div>
+
+      <div class="container">
+        <div id="nav" class="row text-center">
+          <img class="logo" src="images/logo2.png" />
+        </div>
+      </div>
+    </script>
+
+    <!-- footer template -->
+    <script id="template-footer" type="text/x-handlebars-template">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-7">
+            <h2>About</h2>
+            <p><a href="index.html">Home</a>
+            <!--<p>Team-->
+            <p><a href="http://www.ecoventsystems.com/blog/">Blog</a>
+            <p>
+              <a href="http://www.facebook.com/pages/Ecovent-Systems/479465472091275"><i class="fa fa-facebook-square"></i></a>
+              <a href="https://twitter.com/EcoVentSystems"><i class="fa fa-twitter-square"></i></a>
+              <a href="https://plus.google.com/b/104225458808112914446/104225458808112914446/posts"><i class="fa fa-google-plus-square"></i></a>
+          </div>
+          <div class="col-xs-12 col-md-5">
+            <h2>Contact us</h2>
+            <p><a href="mailto:info@ecoventsystems.com"><i class="fa fa-envelope"></i> info@ecoventsystems.com</a>
+            <p><a href="tel:856-343-2349"><i class="fa fa-phone"></i> (620) 983 6863</a>
+            <p><i class="fa fa-map-marker"></i> Cambridge, MA 02139
+          </div>
+        </div>
+      </div>
+    </script>
+
+    <!-- three col layout template -->
+    <script id="template-triplecol" type="text/x-handlebars-template">
+      <div class="row">
+
+        {{#if header}}
+          <div class="col-xs-12">
+            <h1 class="text-center">{{header}}</h1>
+            <hr />
+          </div>
+        {{/if}}
+
+        {{#each items}}
+          <div class="col-sm-4 col-xs-12">
+            {{#if this.icon}}
+              <h1><i class="fa {{this.icon}}"></i></h1>
+            {{/if}}
+            {{#if this.header }}
+              <h2>{{this.header}}</h2>
+            {{/if}}
+            {{#if this.body }}
+              <p class="text-center">{{this.body}}</p>
+            {{/if}}
+          </div>
+        {{/each}}
+
+      </div>
+    </script>
+
+    <!-- bootstrap modal template -->
+    <script id="template-modal" type="text/x-handlebars-template">
+      <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="myModalLabel">{{title}}</h4>
+            </div>
+            <div class="modal-body">{{body}}</div>
+          </div>
+        </div>
+      </div>
+    </script>
+
+    <!-- signup form template -->
+    <script id="template-signup" type="text/x-handlebars-template">
+      <form action="http://ecoventsystems.us7.list-manage.com/subscribe/post?u=01a02dc133785cf2f3e3363dc&amp;id=70eb4e3932" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" role="form" novalidate>
+        <p>
+          <input type="text" value="" name="FNAME" class="required email form-control" id="mce-FNAME" placeholder="First name">
+        <p>
+          <input type="text" value="" name="LNAME" class="required email form-control" id="mce-LNAME" placeholder="Last name">
+        <p>
+          <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Email">
+        <p>
+          <button type="submit" class="button">Sign me up!</button>
+      </form>
+    </script>
+
+
+    <!-- render handlebars -->
+    <script type="text/javascript">
+      function templateToString(templateId) {
+        return new Handlebars.SafeString($(templateId).html())
+      }
+      function compileTemplate(templateId, context) {
+        return Handlebars.compile($(templateId).html())(context)
+      }
+      function renderTemplate(templateId, targetId, context) {
+        $(targetId).append( compileTemplate(templateId, context) );
+      }
+      function registerPartial(name, templateId) {
+        Handlebars.registerPartial(name, $(templateId).html());
+      }
+
+      $(document).ready(function() {
+        renderTemplate('#template-modal', '#header',
+          { title: "Mailing list signup",
+            body: templateToString('#template-signup')
+          });
+
+        var valuePropContext = {
+          items: [
+            { icon: "fa-clock-o",
+              header: "Simple.",
+              body: "Vents install in minutes, improving comfort immediately."
+              },
+            { icon: "fa-dollar",
+              header: "Cost effective.",
+              body: "Stop wasting your money heating and cooling unused rooms."
+              },
+            { icon: "fa-rocket",
+              header: "Smart.",
+              body: "ecoVent automatically distributes conditioned air to make your whole home comfortable and energy efficient."
+              }
+            ]
+          };
+
+        renderTemplate('#template-triplecol', '#value-propositions',
+          { items: [
+            { icon: "fa-clock-o",
+              header: "Simple.",
+              body: "Vents install in minutes, improving comfort immediately."
+              },
+            { icon: "fa-dollar",
+              header: "Cost effective.",
+              body: "Stop wasting your money heating and cooling unused rooms."
+              },
+            { icon: "fa-rocket",
+              header: "Smart.",
+              body: "ecoVent automatically distributes conditioned air to make your whole home comfortable and energy efficient."
+              }
+            ]
+          }
+        );
+
+        renderTemplate('#template-triplecol', '#specs',
+          { header: "The ecoVent system",
+            items: [
+            { header: "Convenient interface",
+              body: "Easily control individual rooms from your mobile device or computer."
+              },
+            { header: "Intelligent wireless vent",
+              body: new Handlebars.SafeString("\
+                <img src='images/model_vent.png' /> \
+                <p>Vents automatically adjust to achieve optimal comfort and efficiency. They communicate wirelessly and run on household AA batteries for years.")
+              },
+            { header: "Advanced sensor suite",
+              body: new Handlebars.SafeString("\
+                <img src='images/model_sensors.png' /> \
+                    <p>Sensor modules plug into any wall outlet to monitor the temperature of each room.")
+              }
+            ]
+          }
+        );
+
+        renderTemplate('#template-signup', '#signup div');
+
+        renderTemplate('#template-footer', '#footer');
+      });
+    </script>
+
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
