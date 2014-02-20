@@ -225,7 +225,8 @@ a.button:hover {
 
 @media (max-width: 768px) {
   /* line 105, ../sass/global.sass */
-  .container {
+  body, .container {
+    width: 100%;
     margin: 0;
   }
 
