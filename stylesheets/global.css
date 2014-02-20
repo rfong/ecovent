@@ -234,15 +234,17 @@ a.button:hover {
   .container {
     width: 100%;
     margin: 0;
+    border: 1px solid red;
   }
 
-  /* line 114, ../sass/global.sass */
+  /* line 115, ../sass/global.sass */
   body {
+    border: 1px solid blue;
     margin: 0;
     padding: 0;
   }
 
-  /* line 118, ../sass/global.sass */
+  /* line 120, ../sass/global.sass */
   .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
     margin-left: 0;
     margin-right: 0;
