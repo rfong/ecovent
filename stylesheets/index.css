@@ -491,21 +491,22 @@ form {
   font-family: Quicksand, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 /* line 127, ../sass/index.sass */
-form input {
-  width: 100% !important;
-  border: 1px solid #999999 !important;
-  font-size: 20px !important;
+form input.form-control {
+  margin: 0 auto !important;
+  width: 100%;
+  border: 1px solid #999999;
+  font-size: 20px;
   color: #333333;
   margin: 0 2px;
 }
-/* line 133, ../sass/index.sass */
+/* line 134, ../sass/index.sass */
 form button {
   margin: 0 1em;
   padding: 6px 12px;
   font-size: 20px !important;
 }
 
-/* line 138, ../sass/index.sass */
+/* line 139, ../sass/index.sass */
 .form-control, button {
   -moz-box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px 0;
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px 0;

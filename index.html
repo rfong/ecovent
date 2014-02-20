@@ -33,7 +33,7 @@
 
 <!-- Add your site or application content here -->
 
-<div id="upright">
+<div id="upright" class="hidden-xs">
   <div class="button" data-toggle="modal" data-target="#signup-modal">Get updates</div>
 </div>
 
@@ -88,17 +88,17 @@
 
 
   <div id="value-propositions" class="row">
-    <div class="col-xs-4">
+    <div class="col-sm-4 col-xs-12">
       <h1><i class="fa fa-clock-o"></i></h1>
       <h2>Simple.</h2>
       <p class="text-center">Vents install in minutes, improving comfort immediately.</p>
     </div>
-    <div class="col-xs-4">
+    <div class="col-sm-4 col-xs-12">
       <h1><i class="fa fa-dollar"></i></h1>
       <h2>Cost effective.</h2>
       <p class="text-center">Stop wasting your money heating and cooling unused rooms.</p>
     </div>
-    <div class="col-xs-4">
+    <div class="col-sm-4 col-xs-12">
       <h1><i class="fa fa-rocket"></i></h1>
       <h2>Smart.</h2>
       <p class="text-center">ecoVent automatically distributes conditioned air to make your whole home comfortable and energy efficient.</p>
@@ -115,8 +115,12 @@
 
     <div id="video" class="row">
       <div class="col-xs-12 text-center">
-        <!-- xs/sm -->
-        <div class="hidden-md hidden-lg">
+        <!-- xs -->
+        <div class="visible-xs">
+          <iframe width="560" height="315" src="http://www.youtube.com/embed/WC89gel67-A" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <!-- sm -->
+        <div class="visible-sm">
           <iframe width="640" height="360" src="http://www.youtube.com/embed/WC89gel67-A" frameborder="0" allowfullscreen></iframe>
         </div>
         <!-- md/lg -->
@@ -133,6 +137,7 @@
         <form action="http://ecoventsystems.us7.list-manage.com/subscribe/post?u=01a02dc133785cf2f3e3363dc&amp;id=70eb4e3932" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" role="form" novalidate>
           <p>
             <input type="text" value="" name="FNAME" class="required email form-control" id="mce-FNAME" placeholder="First name">
+          <p>
             <input type="text" value="" name="LNAME" class="required email form-control" id="mce-LNAME" placeholder="Last name">
           <p>
             <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Email">
@@ -157,17 +162,17 @@
         <hr />
       </div>
 
-      <div class="col-xs-4">
+      <div class="col-sm-4 col-xs-12">
         <h2>Convenient interface</h2>
         <p>[come up with an image]
         <p>Easily control individual rooms from your mobile device or computer.</p>
       </div>
-      <div class="col-xs-4">
+      <div class="col-sm-4 col-xs-12">
         <h2>Intelligent wireless vent</h2>
         <p><img src="images/model_vent.png" /></p>
         <p>Vents automatically adjust to achieve optimal comfort and efficiency. They communicate wirelessly and run on household AA batteries for years.</p>
       </div>
-      <div class="col-xs-4">
+      <div class="col-sm-4 col-xs-12">
         <h2>Advanced sensor suite</h2>
         <p><img src="images/model_sensors.png" /></p>
         <p>Sensor modules plug into any wall outlet to monitor the temperature of each room.</p>
