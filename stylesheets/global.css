@@ -222,3 +222,23 @@ a.button:hover {
 .carousel.carousel-fade .item.active {
   opacity: 1;
 }
+
+@media (max-width: 768px) {
+  /* line 105, ../sass/global.sass */
+  .container {
+    margin: 0;
+  }
+
+  /* line 109, ../sass/global.sass */
+  body {
+    padding: 0;
+  }
+
+  /* line 112, ../sass/global.sass */
+  .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+/* etc */
